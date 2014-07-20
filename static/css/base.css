@@ -1,0 +1,43 @@
+.main{
+height: 100%;
+width: 70%;
+margin-left: 15%;
+margin-right:15%;
+}
+
+.header{
+height: 15%;
+width: 100%;
+top: -50px;
+background-color: green;
+}
+
+.footer{
+bottom: -1px;
+height: 5%;
+width: 100%;
+background-color: blue;
+text-align: center;
+}
+
+.center{
+height: 80%;
+width: 100%;
+background-color: #b0c4de;
+}
+
+.main_content{
+height: 100%;
+width: 70%;
+float: left;
+background-color: pink;
+}
+.rightsidebar{
+height: 100%;
+width: 30%;
+float: left;
+background-color: yellow;
+}
+
+
+

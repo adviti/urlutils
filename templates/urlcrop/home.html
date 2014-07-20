@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+
+{% block title %} URL Shortner {% endblock %}
+
+{% block main_content_block %}
+        <h2>Please enter the url to be shortened</h2>
+        <form method="POST" onsubmit="return isValidUrl()">{% csrf_token %}
+
+                URL: <input type="text" name="url"><br>
+                <input type="submit" value="Submit">
+        </form>
+
+        {% if short_url %}
+            <h2> Shortened url is <a href = "{{ short_url }}"  target = _blank>{{short_url}}</a> </h2>
+        {% endif %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

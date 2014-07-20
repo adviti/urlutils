@@ -1,0 +1,39 @@
+<html>
+<head>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery/jquery-2.1.1.min.js"></script>
+    <link rel = "stylesheet" href="{{ STATIC_URL }}css/base.css">
+    {% block js_head %}
+    {% endblock %}
+    {% block css_head %}
+    {% endblock %}
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div class = "main">
+    <div class="header">
+        <h3>URL shortener</h3>
+        {% block header_block %}
+        {% endblock %}
+    </div>
+    <div class = "center">
+        <div class = "main_content">
+        {% block main_content_block %}
+        {% endblock %}
+        </div>
+        <div class = "rightsidebar">
+        {% block rightsidebar_block %}
+        {% endblock %}
+        </div>
+
+    </div>
+    <div class="footer">
+        <h4>copyright@aditi.com</h4>
+         {% block footer_block %}
+         {% endblock %}
+    </div>
+</div>
+</body>
+</html>
